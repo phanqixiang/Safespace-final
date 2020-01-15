@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">SafeSpace</string>
+    <string name="sign_in">Sign In</string>
+    <string name="login">Login</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot your password?</string>
+    <string name="no_account">Do not have an account?</string>
+    <string name="create_account">Create an account</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="has_account">Already have an account?</string>
+    <string name="email">Email</string>
+    <string name="livechat">Livechat</string>
+    <string name="report">Report</string>
+    <string name="account">Account</string>
+    <string name="home">Home</string>
+    <string name="sos">SOS</string>
+    <string name="start_chat">Chat Now</string>
+    <string name="preferred_nickname">Preferred Nickname</string>
+    <string name="preferred_nickname_tooltip">Provide anonymous name</string>
+    <string name="welcome">Welcome to SafeSpace</string>
+    <string name="desc">Take control of your life, let us start today.</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="show_image" />
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="logo" />
+    <string name="new_image" />
+    <string name="full_title">fullTitle</string>
+    <string name="full_desc">fullDesc</string>
+    <string name="abuseType">Abuse Type</string>
+    <string name="address">Address</string>
+    <string name="sampleaddress">NO.33, JALAN 15, TAMAN PINTAR, 56000 KUALA LUMPUR</string>
+    <string name="addPhoto">Add Photo</string>
+    <string name="choose">Choose</string>
+    <string name="abuser">Abuser\'s Name</string>
+    <string name="note">*Provide abuser\'s full name if possible</string>
+    <string name="egName">Name</string>
+    <string name="vicName">Victim\'s Name</string>
+    <string name="submit">Submit</string>
+
+    <string-array name="abuse_list">
+        <item>Physical Abuse</item>
+        <item>Sexual Abuse</item>
+        <item>Verbal/Emotional Abuse</item>
+        <item>Mental/Psychological Abuse</item>
+        <item>Cultural/Identity Abuse</item>
+    </string-array>
+</resources>

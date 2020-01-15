@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.ReportActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/report_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_arrow_back_white_24dp"
+        app:title="Abuse Report"
+        app:titleTextColor="@android:color/white" />
+
+    <ScrollView
+        android:layout_width="403dp"
+        android:layout_height="585dp"
+        android:layout_marginTop="65dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".user.ReportActivity">
+
+            <TextView
+                android:id="@+id/abuseType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/abuseType"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/font_title"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="8dp"
+                android:entries="@array/abuse_list"
+                app:layout_constraintStart_toStartOf="@+id/abuseType"
+                app:layout_constraintTop_toBottomOf="@+id/abuseType" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/address"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/font_title"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/abuseType"
+                app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+            <EditText
+                android:id="@+id/addressText"
+                android:layout_width="370dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="@string/sampleaddress"
+                android:inputType="text|textMultiLine"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/address"
+                app:layout_constraintTop_toBottomOf="@+id/address" />
+
+            <TextView
+                android:id="@+id/addPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/addPhoto"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/font_title"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/addressText"
+                app:layout_constraintTop_toBottomOf="@+id/addressText" />
+
+            <Button
+                android:id="@+id/choosePhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/choose"
+                app:layout_constraintStart_toStartOf="@+id/addPhoto"
+                app:layout_constraintTop_toBottomOf="@+id/addPhoto" />
+
+            <ImageView
+                android:id="@+id/imgView"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/choosePhoto"
+                app:layout_constraintStart_toEndOf="@+id/choosePhoto"
+                app:layout_constraintTop_toTopOf="@+id/addPhoto" />
+
+            <TextView
+                android:id="@+id/abuser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/abuser"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/font_title"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/choosePhoto"
+                app:layout_constraintTop_toBottomOf="@+id/choosePhoto" />
+
+            <EditText
+                android:id="@+id/abuseText"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="@string/egName"
+                android:inputType="textPersonName"
+                android:textColor="@android:color/black"
+                app:layout_constraintStart_toStartOf="@+id/abuser"
+                app:layout_constraintTop_toBottomOf="@+id/abuser" />
+
+            <TextView
+                android:id="@+id/notesText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/note"
+                app:layout_constraintStart_toStartOf="@+id/abuseText"
+                app:layout_constraintTop_toBottomOf="@+id/abuseText" />
+
+            <TextView
+                android:id="@+id/victim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/vicName"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/font_title"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/notesText"
+                app:layout_constraintTop_toBottomOf="@+id/notesText" />
+
+            <EditText
+                android:id="@+id/victimText"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="@string/egName"
+                android:inputType="textPersonName"
+                android:textColor="@android:color/black"
+                app:layout_constraintStart_toStartOf="@+id/victim"
+                app:layout_constraintTop_toBottomOf="@+id/victim" />
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="375dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/submit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/victimText"
+                app:layout_constraintTop_toBottomOf="@+id/victimText" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+
+
